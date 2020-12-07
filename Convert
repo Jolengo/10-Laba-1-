@@ -1,0 +1,13 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Convert<E> {
+    public ArrayList<E> arrayToList(E[] arr)
+    {
+        ArrayList<E> newArr = new ArrayList(arr.length);
+        for (int i=0; i<arr.length; ++i)
+            newArr.add(arr[i]);
+        return newArr;
+    }
+}
